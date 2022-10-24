@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans',sans-serif;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1157px;
+}   
+
+h1,h2,h3,h4 {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+p {
+    font-family: Roboto;
+}
+
+/* Navigation */
+nav {
+    padding: 22px 0;
+    height: 80px;
+}
+
+nav .navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .navigation img {
+    width: 64px;
+}
+
+nav .navigation .nav-list {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+nav .navigation .nav-list li {
+    list-style: none;
+}
+
+nav .navigation .nav-list li a {
+    text-decoration: none;
+    margin: 10px 20px;
+    color: #555;
+}
+
+nav .navigation .nav-list li a.active {
+    color: #259bca;
+} 
+
+nav .navigation .nav-list li a:hover {
+    color: #db545a;
+}
+
+
+/* HEADER */
+header {
+    background: url('../img/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    min-height: 753px;
+    padding: 200px 0 0 0;
+}
+
+header .box {
+    width: 457px;
+    min-height: 485px;
+    background-color: #478ac9;
+    padding: 40px 50px;
+    color: #fff;
+}
+
+header .box h1 {
+    font-weight: 700;
+    font-size: 3.75rem;
+    line-height: 1;
+    padding: 20px 0 0 0;
+}
+
+header .box p {
+    font-size: 1.15rem;
+    margin: 32px 0 40px 0;
+    line-height: 1.4;
+}
+
+header .box p.italic {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 17px;
+}
+
+header .box a {
+    background: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #259bca;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 20px 54px 20px;
+    transition: .2s ease-in;
+}
+
+header .box a:hover {
+    background-color: #ddd;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: center;
+}
+
+.services .box {
+    padding: 101px 30px 30px;
+    background: #eee;
+    color: #259bca;
+}
+
+.services .box:first-child {
+    background-color: #478ac9;
+    opacity: .7;
+}
+
+.services .box:first-child h1 {
+    color: #fff;
+}
+
+.services .box:first-child p {
+    color: #fff;
+}
+
+.services .box:last-child {
+    background-color: #fff;
+}
+
+.services .box h1 {
+    font-size: 2.5rem;
+}
+
+.services .box p {
+    line-height: 2.2;
+    font-weight: 400;
+    margin: 20px 0 0;
+    letter-spacing: 0.8px;
+    color: #111;
+}
+
+.services .box img {
+    width: 64px;
+    margin: 30px auto 0 0;
+}
+
+/* MEET THE TEAM SECTION */
+/* SECTION ONE */
+.team .section-one {
+    background-color: rgb(71, 138, 201);
+    padding: 50px 30px 0px;
+    height: 520px;
+}
+
+.team .section-one h2 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.team .section-one p {
+    text-align: center;
+    margin: 20px 0;
+    color: #fff;
+}
+
+/* SECTION TWO */
+.team .section-two {
+    height: 630px;
+}
+
+.team .section-two .boxes {
+    display: flex;
+    margin: -300px 0 0 0;
+}
+
+.team .section-two .boxes .box {
+    background: linear-gradient(white, rgb(242, 242, 242));
+    margin: 0 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.team .section-two .boxes .box h3 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+}
+
+.team .section-two .boxes .box p.span {
+    margin: 10px 0;
+    color: #478ac9;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.team .section-two .boxes .box p {
+    margin: 20px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #888;
+}
+
+.team .section-two .boxes .box img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+.team .section-two .boxes .box ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 30px 0 20px 0;
+    font-size: 22px;
+}
+
+.team .section-two .boxes .box ul li {
+    margin: 0 10px;
+    color: #478ac9;
+}
+
+/* SECOND ABOUT SECTION */
+.sec-about {
+    background-color: #478ac9;
+    height: 850px;
+}
+
+.sec-about .section:first-child {
+    background: #fff;
+    height: 40%;
+}
+
+.sec-about .section:last-child {
+    margin: -291px auto 0px calc((100% - 1140px) / 2);
+    height: 50%;
+}
+
+.sec-about .section:last-child img {
+    width: 847px;
+    height: 691px;
+}
+
+.sec-about .section .box {
+    position: relative;
+    z-index: 1;
+    padding: 30px 28px;
+    width: 548px;
+    min-height: 459px;
+    background: #eee;
+    margin: -600px 0 0 587px;
+}
+
+.sec-about .section .box h2 {
+    font-weight: 400;
+    margin: 50px 0 20px 0;
+    font-size: 2rem;
+    line-height: 1.1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sec-about .section .box p {
+    font-style: italic;
+    margin: 30px 0 60px 0;
+}
+
+.sec-about .section .box a {
+    background: #259bca;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 54px 20px;
+    transition: .2s ease-in;
+}
+
+.sec-about .section .box a:hover {
+    opacity: 0.6;
+}
+
+/* SECOND SERVICE SECTION */
+.sec-service {
+    height: 700px;
+}
+
+.sec-service img {
+    width: 100%;
+    height: 673px;
+    object-fit: cover;
+}
+
+.sec-service .boxes {
+    display: flex;
+    margin: -250px 0 0 0;
+}
+
+.sec-service .boxes .box {
+    padding: 0 10px;
+}
+
+.sec-service .boxes .box .header {
+    display: flex;
+}
+
+.sec-service .boxes .box .header h1 {
+    font-size: 3.5em;
+    color: #259bca;
+}
+
+.sec-service .boxes .box .header h3 {
+    align-items: flex-end;
+    display: flex;
+    margin: 0 0 12px 20px;
+}
+
+.sec-service .boxes .box p {
+    letter-spacing: .8px;
+    line-height: 1.4;
+    margin: 20px 0;
+}
+
+/* Consulting Section */
+.cons-section {
+    background: #478ac9;
+    color: #fff;
+    padding: 20px 0 120px 0;
+}
+
+.cons-section h1 {
+    padding: 50px 0;
+    font-size: 2em;
+}
+
+.cons-section .section {
+    display: flex;
+}
+
+.cons-section .section .box {
+    margin: 0 50px 50px 0;
+    font-size: 20px;
+}
+
+.cons-section .section .box p {
+    margin: 40px 0;
+}
+
+.cons-section .section .box p span {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cons-section .section .box img {
+    position: absolute;
+    width: 450px;
+    top: 70px;
+}
+
+.cons-section a {
+    background: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #259bca;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 54px 20px;
+    transition: .2s ease-in;
+}
+
+.cons-section a:hover {
+    opacity: 0.6;
+}
+
+/* THIRD ABOUT SECTION */
+.thr-section {
+    background-color: #478ac9;
+    padding: 200px 0;
+}
+
+.thr-section .box-1 {
+    background: #259bca;
+    height: 598px;
+}
+
+.thr-section .box-2 {
+    background: url('../img/thr-sec-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 918px;
+    height: 612px;
+    margin: -725px 111px 0 auto;
+}
+
+.thr-section .box-3 {
+    background-color: #fff;
+    padding: 70px 40px;
+    width: 519px;
+    min-height: 478px;
+    background-image: none;
+    margin: -234px 0 -67px auto;
+}
+
+.thr-section .box-3 h2 {
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 1.1;
+}
+
+.thr-section .box-3 p {
+    line-height: 1.8;
+    margin: 20px 0 0;
+}
+
+.thr-section .box-3 a {
+    background: #259bca;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 54px 20px;
+    transition: .2s ease-in;
+    position: relative;
+    top: 80px;
+}
+
+.thr-section .box-3 a:hover {
+    opacity: 0.6;
+}
+
+/* Fourth ABOUT SECTION */
+.fr-section {
+    background: url('../img/fr-section-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 70px 0;
+}
+
+.fr-section .box {
+    background: #fff;
+    width: 853px;
+    min-height: 528px;
+    background-image: none;
+    padding: 0 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.fr-section .box h2 {
+    font-size: 3.55rem;
+    font-weight: 700;
+    width: 538px;
+    position: relative;
+    margin: 0 auto;
+    top: 50px;
+}
+
+.fr-section .box p {
+    margin: 60px 0;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.fr-section .box p.fw-strong {
+    position: relative;
+    top: 30px;
+    font-weight: 700;
+}
+
+.fr-section .box .border {
+    width: 50%;
+    height: 20px;
+    margin: 0 auto;
+    background: #478ac9;
+    position: relative;
+}
+
+.fr-section .box .border:first-child {
+    top: 5px;
+}
+
+.fr-section .box .border:last-child {
+    bottom: 5px;
+}
+
+/* CONTACT SECTION */
+.contact-section .section {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+.contact-section .section .box {
+    width: 100%;
+    padding: 30px;
+}
+
+.contact-section .section .form-box h2 {
+    font-weight: 400;
+    font-size: 2.25rem;
+    font-family: Roboto;
+}
+
+.contact-section .section .form-box input[type="text"] {
+    display: block;
+    border: none;
+    border-bottom: 1px solid #333;
+    padding: 40px 10px 20px 10px;
+    width: 100%;
+    font-size: 16px;
+    font-family: Roboto;
+}
+
+.contact-section .section .form-box input[type="text"]:focus {
+    outline: none;
+}
+
+.contact-section .section .form-box input[type="submit"] {
+    color: #fff;
+    border: 0;
+    width: 100%;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 30px;
+    background: #478ac9;
+    margin: 50px 0 0 0;
+    transition: .2s ease-in;
+}
+
+.contact-section .section .form-box input[type="submit"]:hover {
+    opacity: .6;
+}
+
+.contact-section .section .contact-box {
+    background: #f2f2f2;
+}
+
+.contact-section .section .contact-box h2 {
+    font-family: Roboto;
+    font-size: 1.875rem;
+    font-weight: 200;
+}
+
+.contact-section .section .contact-box .list {
+    margin: 54px 0 0 0;
+}
+
+.contact-section .section .contact-box .list .item a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.contact-section .section .contact-box .list .item .item-text {
+    padding: 20px;
+    display: none;
+}
+
+/* FOOTER SECTION */
+footer {
+    background-color: #478ac9;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+}
