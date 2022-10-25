@@ -45,6 +45,16 @@ nav .navigation .nav-list {
     font-size: 1rem;
 }
 
+nav .navigation a.bars {
+    text-decoration: none;
+    color: #000;
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    font-size: 1.5em;
+}
+
 nav .navigation .nav-list li {
     list-style: none;
 }
@@ -63,6 +73,47 @@ nav .navigation .nav-list li a:hover {
     color: #db545a;
 }
 
+nav .navigation .mobile-nav {
+    background-color: rgba(0, 0, 0, .9);
+    position: fixed;
+    z-index: 9;
+    width: 250px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 80px 0;
+    transform: translateX(250px);
+    transition: transform .3s ease-in;
+}
+
+nav .navigation .mobile-nav.active {
+    transform: translateX(0);
+}
+
+nav .navigation .mobile-nav #close-nav {
+    position: absolute;
+    right: 45px;
+    top: 30px;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+nav .navigation .mobile-nav #close-nav:hover {color: #478ac9}
+
+nav .navigation .mobile-nav li {list-style: none}
+
+nav .navigation .mobile-nav li a {
+    color: #fff;
+    text-decoration: none;
+    display: table;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 1.3em;
+    width: 100%;
+    text-align: center;
+}
+
+nav .navigation .mobile-nav li a:hover {background-color: #478ac9}
 
 /* HEADER */
 header {
@@ -252,13 +303,14 @@ header .box a:hover {
 }
 
 .sec-about .section:last-child {
-    margin: -291px auto 0px calc((100% - 1140px) / 2);
+    margin: -291px 0 0 0;
     height: 50%;
 }
 
 .sec-about .section:last-child img {
     width: 847px;
     height: 691px;
+    object-fit: contain;
 }
 
 .sec-about .section .box {
@@ -581,8 +633,10 @@ header .box a:hover {
 }
 
 .contact-section .section .contact-box .list .item .item-text {
-    padding: 20px;
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s;
+    padding: 0 20px;
 }
 
 /* FOOTER SECTION */
@@ -595,4 +649,78 @@ footer {
 
 footer a {
     color: #fff;
+}
+
+/* MEDIA QUERIES FOR TABLET */
+@media(max-width: 1176px) {
+    .container {width: 90%}
+    /* NAVIGATION */
+    .navigation .nav-list li {display: none}
+    .navigation a.bars {display: block !important}
+    /* HEADER */
+    header { padding: 100px 0 0 0; }
+    header .box {width: 90%; margin: 0 auto}
+    header .box a {font-size: .8em; letter-spacing: 1px; padding: 13px 30px}
+    /* SERVICES SECTION */
+    .services {display: block}
+    /* TEAM SECTION */
+    .team .section-two {height: 100%}
+    .team .section-two .boxes {display: block}
+    .team .section-two .boxes .box {width: 90%; margin: 20px auto;}
+    /* SECOND ABOUT SECTION */
+    .sec-about {height: auto}
+    .sec-about .section:last-child {
+        margin: 0;
+        padding: 40px 0;
+        width: 100%;
+        height: 50%;
+    }
+    .sec-about .section:last-child img {
+        width: 100%;
+        height: auto;
+    }
+    .sec-about .section .box {
+        padding: 30px 28px;
+        width: 100%;
+        min-height: 410px;
+        background: #eee;
+        margin: -5px 0 0 0;
+    }
+    /* SECOND SERVICE SECTION */
+    .sec-service {height: inherit}
+    .sec-service .boxes {display: block; padding: 40px; margin: -400px 0 50px 0;}
+    .sec-service .boxes .box {margin: 100px 10px;}
+    /* CONSULTING SECTION */
+    .cons-section {padding: 0 20px}
+    .cons-section .section {display: block}
+    .cons-section .section img {display: none}
+    /* THIRD ABOUT SECTION */
+    .thr-section .box-1 {display: none}
+    .thr-section .box-2 {
+        width: 100%;
+        height: 763px;
+        margin: 0;
+    }
+    .thr-section .box-3 {width: 100%}
+    /* FOURTH ABOUT SECTION */
+    .fr-section .box {width: 90%}
+    .fr-section .box h2 {font-size: 2.55rem; width: inherit}
+    /* CONTACT SECTION */
+    .contact-section .section {display: block}
+}
+
+/* MEDIA QUERIS FOR MOBILE */
+@media(max-width: 500px) {
+    .sec-about .section .box a {
+        padding: 15px 40px;
+        font-size: 15px;
+    }
+    
+    .thr-section .box-3 {padding: 40px}
+    .thr-section .box-3 h2 {font-size: 2em}
+    .thr-section .box-3 a {
+        padding: 15px 40px;
+        font-size: 15px;
+        top: 60px;
+    }   
 }
