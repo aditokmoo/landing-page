@@ -21,9 +21,6 @@ items.forEach((item, x) => {
 
         itemText.forEach((content, j) => {
             if(x == j) {
-                console.log(x);
-                console.log(j);
-
                 content.classList.toggle('active')
 
                 if(content.classList.contains('active')) {
